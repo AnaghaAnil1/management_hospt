@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}{% endblock  %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="{% static 'images/icon_hos.png' %}" alt="Hospital Logo">
+            <span class="hospital-name">Hospital Name</span>
+        </div>
+        <div class="nav-links">
+            <a href="{%  url 'home' %}">Home</a>
+            <a href="{%  url 'about' %}">About Us</a>
+            <a href="{%  url 'booking' %}">Our Services</a>
+            <a href="{%  url 'dept' %}">Departments</a>
+            <a href="{%  url 'doctor' %}">Our Doctors</a>
+            <a href="{%  url 'contact' %}">Contact Us</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Hospital Management System</h1>
+        <p>Welcome to the Hospital Management System.</p>
+    </div>
+    {% block content%}{% endblock  %}
+</body>
+</html>
