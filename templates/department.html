@@ -5,5 +5,15 @@ Department
 {%endblock%}
 
 {%block content%}
-Department PAGE
- {%endblock%}
+<h1 class="text-center"> Our Departments</h1>
+<hr>
+
+{% for d in deptt %}
+
+<div>
+    <h1>{{d.dep_name}}</h1>
+    <p>{{d.dep_description}}</p>
+</div>
+
+{% endfor %}
+{%endblock%}

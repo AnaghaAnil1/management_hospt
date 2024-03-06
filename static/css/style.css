@@ -35,18 +35,4 @@ nav a {
     margin: 0 20px;
     font-size: 18px;
 }
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-}
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #666;
-}
+
