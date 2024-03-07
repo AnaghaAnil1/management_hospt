@@ -5,5 +5,13 @@ Services
 {%endblock%}
 
 {%block content%}
-HOME PAGE
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/common.css' %}">
+<h1> Make an appointment</h1>
+<hr>
+
+<form action="">
+    {{form.as_p}}
+</form>
+
  {%endblock%}

@@ -5,7 +5,9 @@ Department
 {%endblock%}
 
 {%block content%}
-<h1 class="text-center"> Our Departments</h1>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/common.css' %}">
+<h1> Our Departments</h1>
 <hr>
 
 {% for d in deptt %}
