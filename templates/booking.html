@@ -1,17 +1,23 @@
 {% extends "basic.html" %}
 
+
 {%block title%}
 Services
 {%endblock%}
 
 {%block content%}
 {% load static %}
+
 <link rel="stylesheet" href="{% static 'css/common.css' %}">
 <h1> Make an appointment</h1>
 <hr>
 
-<form action="">
+<form action="" method="POST">
+    {% csrf_token %}
     {{form.as_p}}
+    <br>
+
+    <button class="btn btn-primary" type="submit">Submit</button>
 </form>
 
  {%endblock%}

@@ -1,0 +1,15 @@
+{% extends "basic.html" %}
+
+{%block title%}
+Confirmation Message
+{%endblock%}
+
+{%block content%}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/common.css' %}">
+<h1>Booking Confirmation</h1>
+<hr>
+<div class="alert alert-info" role="alert">
+    Thank You for your appointment request. We will contact you shortly.
+</div>
+ {%endblock%}
