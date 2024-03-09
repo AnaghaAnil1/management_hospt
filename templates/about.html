@@ -5,5 +5,28 @@ ABOUT
 {%endblock%}
 
 {%block content%}
-HOME PAGE
+
+<div class="about-section">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <h1>About Our Hospital</h1>
+    <hr>
+    
+    <div class="info-box">
+        <h2>About</h2>
+        <p>we're not just a healthcare facility; we're a beacon of hope, healing, and innovation. From humble beginnings, we've grown into a world-
+            class institution, renowned for our unwavering commitment to patient-centric care, cutting-edge medical research, and community outreach programs.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>Our Vision</h2>
+        <p>To be the leading provider of compassionate and innovative healthcare, setting new standards of excellence in patient care.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>Our Mission</h2>
+        <p>Our mission is to enhance the wellbeing of our community through care and innovation.</p>
+    </div>
+
+</div>
  {%endblock%}

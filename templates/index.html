@@ -1,9 +1,20 @@
- {% extends "basic.html" %}
+{% extends "basic.html" %}
 
- {%block title%}
+{% block title %}
 HOME
- {%endblock%}
+{% endblock %}
 
- {%block content%}
- HOME PAGE
-  {%endblock%}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/common.css' %}">
+<div class="container">
+    <div class="jumbotron mt-5">
+        <h1 class="display-4">Welcome to Our Hospital</h1>
+        <p class="lead">Providing compassionate care for all patients.</p>
+        <hr class="my-8">
+        <p>Our hospital is committed to excellence in healthcare services.</p>
+        <a class="btn btn-primary btn-lg" href="{%  url 'about' %}" role="button">Learn more</a>
+    </div>
+</div>
+{% endblock %}
+
