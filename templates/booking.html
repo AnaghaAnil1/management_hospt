@@ -9,15 +9,16 @@ Services
 {% load static %}
 
 <link rel="stylesheet" href="{% static 'css/common.css' %}">
-<h1> Make an appointment</h1>
+<h1 class="text-center"> Make an appointment</h1>
 <hr>
 
-<form action="" method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
-    <br>
-
-    <button class="btn btn-primary" type="submit">Submit</button>
-</form>
+<div class="text-center p-3 container w-50">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <br>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
 
  {%endblock%}

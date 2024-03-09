@@ -24,4 +24,14 @@ h1 {
     color: brown;
 }
 
+.info-boxx {
+    background-color: rgb(240, 172, 149);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
+.container1 {
+    background-color: rgb(216, 211, 211);
+    
+}

@@ -5,5 +5,35 @@ Contact
 {%endblock%}
 
 {%block content%}
-HOME PAGE
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/common.css' %}">
+<h1>Contact</h1>
+<p class="text-center">If you have any questions or need assistance, please feel free to contact us.</p>
+<hr>
+
+<div >
+    <div class="col-md-6">
+        <h3>Emergency Contact</h3>
+        <ul>
+            <li>Emergency Services: 911</li>
+            <li>Hospital Main Line: 987-654-1230</li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h3>Appointment Scheduling</h3>
+        <p>To schedule an appointment, please call:</p>
+        <p>Appointment Desk: 123-456-7890</p>
+    </div>
+</div>
+<hr>
+<div>
+    <div class="col-md-6">
+        <h3>Visit Us</h3>
+        <p>321 Main Street</p>
+        <p>Dublin,D01XXXX</p>
+        <p>Ireland</p>
+    </div>
+</div>
+
+
  {%endblock%}
